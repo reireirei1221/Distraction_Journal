@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EA77CB9F29599033003955F5 /* Distraction_JournalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA77CB9E29599033003955F5 /* Distraction_JournalApp.swift */; };
+		EA77CBA129599033003955F5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA77CBA029599033003955F5 /* ContentView.swift */; };
+		EA77CBA329599035003955F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA77CBA229599035003955F5 /* Assets.xcassets */; };
+		EA77CBA629599035003955F5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA77CBA529599035003955F5 /* Preview Assets.xcassets */; };
+		EA77CBAC29599035003955F5 /* Distraction Journal Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = EA77CBAB29599035003955F5 /* Distraction Journal Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EA77CBB129599035003955F5 /* Distraction_JournalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA77CBB029599035003955F5 /* Distraction_JournalApp.swift */; };
+		EA77CBB329599035003955F5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA77CBB229599035003955F5 /* ContentView.swift */; };
+		EA77CBB529599036003955F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA77CBB429599036003955F5 /* Assets.xcassets */; };
+		EA77CBB829599036003955F5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA77CBB729599036003955F5 /* Preview Assets.xcassets */; };
+		EA77CBC32959B2FB003955F5 /* NotificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA77CBC22959B2FB003955F5 /* NotificationModel.swift */; };
+		EA77CBC5295D9BB6003955F5 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA77CBC4295D9BB6003955F5 /* ExtensionDelegate.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EA77CBAD29599035003955F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA77CB9329599033003955F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA77CBAA29599035003955F5;
+			remoteInfo = "Distraction Journal Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EA77CBBE29599036003955F5 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				EA77CBAC29599035003955F5 /* Distraction Journal Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		EA77CB9B29599033003955F5 /* Distraction Journal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Distraction Journal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA77CB9E29599033003955F5 /* Distraction_JournalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Distraction_JournalApp.swift; sourceTree = "<group>"; };
+		EA77CBA029599033003955F5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EA77CBA229599035003955F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EA77CBA529599035003955F5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EA77CBAB29599035003955F5 /* Distraction Journal Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Distraction Journal Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA77CBB029599035003955F5 /* Distraction_JournalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Distraction_JournalApp.swift; sourceTree = "<group>"; };
+		EA77CBB229599035003955F5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EA77CBB429599036003955F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EA77CBB729599036003955F5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EA77CBC22959B2FB003955F5 /* NotificationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationModel.swift; sourceTree = "<group>"; };
+		EA77CBC4295D9BB6003955F5 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA77CB9829599033003955F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA77CBA829599035003955F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EA77CB9229599033003955F5 = {
+			isa = PBXGroup;
+			children = (
+				EA77CB9D29599033003955F5 /* Distraction Journal */,
+				EA77CBAF29599035003955F5 /* Distraction Journal Watch App */,
+				EA77CB9C29599033003955F5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EA77CB9C29599033003955F5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA77CB9B29599033003955F5 /* Distraction Journal.app */,
+				EA77CBAB29599035003955F5 /* Distraction Journal Watch App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA77CB9D29599033003955F5 /* Distraction Journal */ = {
+			isa = PBXGroup;
+			children = (
+				EA77CB9E29599033003955F5 /* Distraction_JournalApp.swift */,
+				EA77CBA029599033003955F5 /* ContentView.swift */,
+				EA77CBA229599035003955F5 /* Assets.xcassets */,
+				EA77CBA429599035003955F5 /* Preview Content */,
+			);
+			path = "Distraction Journal";
+			sourceTree = "<group>";
+		};
+		EA77CBA429599035003955F5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EA77CBA529599035003955F5 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EA77CBAF29599035003955F5 /* Distraction Journal Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				EA77CBB029599035003955F5 /* Distraction_JournalApp.swift */,
+				EA77CBB229599035003955F5 /* ContentView.swift */,
+				EA77CBC4295D9BB6003955F5 /* ExtensionDelegate.swift */,
+				EA77CBC22959B2FB003955F5 /* NotificationModel.swift */,
+				EA77CBB429599036003955F5 /* Assets.xcassets */,
+				EA77CBB629599036003955F5 /* Preview Content */,
+			);
+			path = "Distraction Journal Watch App";
+			sourceTree = "<group>";
+		};
+		EA77CBB629599036003955F5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EA77CBB729599036003955F5 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA77CB9A29599033003955F5 /* Distraction Journal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA77CBBF29599036003955F5 /* Build configuration list for PBXNativeTarget "Distraction Journal" */;
+			buildPhases = (
+				EA77CB9729599033003955F5 /* Sources */,
+				EA77CB9829599033003955F5 /* Frameworks */,
+				EA77CB9929599033003955F5 /* Resources */,
+				EA77CBBE29599036003955F5 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA77CBAE29599035003955F5 /* PBXTargetDependency */,
+			);
+			name = "Distraction Journal";
+			productName = "Distraction Journal";
+			productReference = EA77CB9B29599033003955F5 /* Distraction Journal.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EA77CBAA29599035003955F5 /* Distraction Journal Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA77CBBB29599036003955F5 /* Build configuration list for PBXNativeTarget "Distraction Journal Watch App" */;
+			buildPhases = (
+				EA77CBA729599035003955F5 /* Sources */,
+				EA77CBA829599035003955F5 /* Frameworks */,
+				EA77CBA929599035003955F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Distraction Journal Watch App";
+			productName = "Distraction Journal Watch App";
+			productReference = EA77CBAB29599035003955F5 /* Distraction Journal Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EA77CB9329599033003955F5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					EA77CB9A29599033003955F5 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					EA77CBAA29599035003955F5 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = EA77CB9629599033003955F5 /* Build configuration list for PBXProject "Distraction Journal" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EA77CB9229599033003955F5;
+			productRefGroup = EA77CB9C29599033003955F5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA77CB9A29599033003955F5 /* Distraction Journal */,
+				EA77CBAA29599035003955F5 /* Distraction Journal Watch App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA77CB9929599033003955F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA77CBA629599035003955F5 /* Preview Assets.xcassets in Resources */,
+				EA77CBA329599035003955F5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA77CBA929599035003955F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA77CBB829599036003955F5 /* Preview Assets.xcassets in Resources */,
+				EA77CBB529599036003955F5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA77CB9729599033003955F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA77CBA129599033003955F5 /* ContentView.swift in Sources */,
+				EA77CB9F29599033003955F5 /* Distraction_JournalApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA77CBA729599035003955F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA77CBC32959B2FB003955F5 /* NotificationModel.swift in Sources */,
+				EA77CBB329599035003955F5 /* ContentView.swift in Sources */,
+				EA77CBC5295D9BB6003955F5 /* ExtensionDelegate.swift in Sources */,
+				EA77CBB129599035003955F5 /* Distraction_JournalApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EA77CBAE29599035003955F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA77CBAA29599035003955F5 /* Distraction Journal Watch App */;
+			targetProxy = EA77CBAD29599035003955F5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		EA77CBB929599036003955F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EA77CBBA29599036003955F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		EA77CBBC29599036003955F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Distraction Journal Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = UQQTK3TUJT;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Distraction Journal";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "reireirei1221.Distraction-Journal";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "reireirei1221.Distraction-Journal.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Debug;
+		};
+		EA77CBBD29599036003955F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Distraction Journal Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = UQQTK3TUJT;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Distraction Journal";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "reireirei1221.Distraction-Journal";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "reireirei1221.Distraction-Journal.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Release;
+		};
+		EA77CBC029599036003955F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Distraction Journal/Preview Content\"";
+				DEVELOPMENT_TEAM = UQQTK3TUJT;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Distraction Journal";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "reireirei1221.Distraction-Journal";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EA77CBC129599036003955F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Distraction Journal/Preview Content\"";
+				DEVELOPMENT_TEAM = UQQTK3TUJT;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Distraction Journal";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "reireirei1221.Distraction-Journal";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA77CB9629599033003955F5 /* Build configuration list for PBXProject "Distraction Journal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA77CBB929599036003955F5 /* Debug */,
+				EA77CBBA29599036003955F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA77CBBB29599036003955F5 /* Build configuration list for PBXNativeTarget "Distraction Journal Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA77CBBC29599036003955F5 /* Debug */,
+				EA77CBBD29599036003955F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA77CBBF29599036003955F5 /* Build configuration list for PBXNativeTarget "Distraction Journal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA77CBC029599036003955F5 /* Debug */,
+				EA77CBC129599036003955F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EA77CB9329599033003955F5 /* Project object */;
+}
