@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA2606AA29C49C5800903055 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA77CBB229599035003955F5 /* ContentView.swift */; };
+		EA2606AC29C4A1EB00903055 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2606AB29C4A1EB00903055 /* AppDelegate.swift */; };
 		EA77CB9F29599033003955F5 /* Distraction_JournalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA77CB9E29599033003955F5 /* Distraction_JournalApp.swift */; };
 		EA77CBA129599033003955F5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA77CBA029599033003955F5 /* ContentView.swift */; };
 		EA77CBA329599035003955F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA77CBA229599035003955F5 /* Assets.xcassets */; };
 		EA77CBA629599035003955F5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA77CBA529599035003955F5 /* Preview Assets.xcassets */; };
 		EA77CBAC29599035003955F5 /* Distraction Journal Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = EA77CBAB29599035003955F5 /* Distraction Journal Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		EA77CBB129599035003955F5 /* Distraction_JournalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA77CBB029599035003955F5 /* Distraction_JournalApp.swift */; };
-		EA77CBB329599035003955F5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA77CBB229599035003955F5 /* ContentView.swift */; };
 		EA77CBB529599036003955F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA77CBB429599036003955F5 /* Assets.xcassets */; };
 		EA77CBB829599036003955F5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA77CBB729599036003955F5 /* Preview Assets.xcassets */; };
 		EA77CBC32959B2FB003955F5 /* NotificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA77CBC22959B2FB003955F5 /* NotificationModel.swift */; };
@@ -45,6 +46,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		EA2606AB29C4A1EB00903055 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA77CB9B29599033003955F5 /* Distraction Journal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Distraction Journal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA77CB9E29599033003955F5 /* Distraction_JournalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Distraction_JournalApp.swift; sourceTree = "<group>"; };
 		EA77CBA029599033003955F5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				EA77CB9E29599033003955F5 /* Distraction_JournalApp.swift */,
+				EA2606AB29C4A1EB00903055 /* AppDelegate.swift */,
 				EA77CBA029599033003955F5 /* ContentView.swift */,
 				EA77CBA229599035003955F5 /* Assets.xcassets */,
 				EA77CBA429599035003955F5 /* Preview Content */,
@@ -237,6 +240,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA2606AC29C4A1EB00903055 /* AppDelegate.swift in Sources */,
 				EA77CBA129599033003955F5 /* ContentView.swift in Sources */,
 				EA77CB9F29599033003955F5 /* Distraction_JournalApp.swift in Sources */,
 			);
@@ -247,7 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA77CBC32959B2FB003955F5 /* NotificationModel.swift in Sources */,
-				EA77CBB329599035003955F5 /* ContentView.swift in Sources */,
+				EA2606AA29C49C5800903055 /* ContentView.swift in Sources */,
 				EA77CBC5295D9BB6003955F5 /* ExtensionDelegate.swift in Sources */,
 				EA77CBB129599035003955F5 /* Distraction_JournalApp.swift in Sources */,
 			);

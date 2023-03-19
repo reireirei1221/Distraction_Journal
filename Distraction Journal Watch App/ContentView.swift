@@ -7,13 +7,15 @@
 
 import SwiftUI
 import UserNotifications
+import WatchConnectivity
 
 struct ContentView: View {
     
     @State private var isShowingLogDistractionView: Bool = false
     @State private var isShowingRemindMeView: Bool = false
-    @ObservedObject var notificationModel: NotificationModel = NotificationModel()
-
+    @ObservedObject var notificationModel = NotificationModel()
+    @ObservedObject var extensionDelegate = ExtensionDelegate()
+    
     init() {
             let center = UNUserNotificationCenter.current()
             center.requestAuthorization(options: .alert) { granted, error in
@@ -46,12 +48,30 @@ struct ContentView: View {
                 RemindMeView()
             }
             Button("Notification") {
+                print("Button pushed")
                 notificationModel.sendNotificationRequest()
+                if WCSession.default.isReachable {
+                    WCSession.default.transferUserInfo(["hey":"Hello"])
+                    WCSession.default.sendMessage(["hey":"Hello"], replyHandler: nil)
+                }
+                else {
+                    print("Error: not connnected to IOS")
+                }
+                
+                
+//                extensionDelegate.session.transferUserInfo(["hey":"Hello"])
+                //extensionDelegate.session.transferUserInfo(["hey":"Hello"])
             }
         
         }
         .padding()
     }
+//    private func sendMessage(index: Int) {
+//            let messages: [String: Any] = ["animal": "cat"]
+//            self.extensionDelegate.session.sendMessage(messages, replyHandler: nil) { (error) in
+//                print(error.localizedDescription)
+//            }
+//        }
 }
 
 struct LogDistractionView: View {
@@ -70,17 +90,6 @@ struct LogDistractionView: View {
     
     var body: some View {
         VStack {
-            
-//            Button("Youtube") {
-//            }
-//            Spacer()
-//            Button("Twitter") {
-//            }
-//            Spacer()
-//            Button("Day Dreaming") {
-//            }
-//            .padding()
-            
             List(oceans) {
                 Text($0.name)
             }
