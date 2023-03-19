@@ -15,41 +15,31 @@ struct ContentView: View {
     @State private var isShowingRemindMeView: Bool = false
     @ObservedObject var notificationModel = NotificationModel()
     @ObservedObject var extensionDelegate = ExtensionDelegate()
+    @ObservedObject var sensor = MotionSensor()
     
     init() {
-            let center = UNUserNotificationCenter.current()
-            center.requestAuthorization(options: .alert) { granted, error in
-                if granted {
-                    print("許可されました！")
-//                    notificationModel.sendNotificationRequest()
-                }else{
-                    print("拒否されました...")
-                }
+        let center = UNUserNotificationCenter.current()
+        center.requestAuthorization(options: .alert) { granted, error in
+            if granted {
+                print("許可されました！")
+            }else{
+                print("拒否されました...")
             }
         }
+    }
     
     var body: some View {
         VStack {
-            Text("Let's Stay Focused Today!")
-                .multilineTextAlignment(.center)
-            Divider().background(Color.orange)
-            Spacer()
-            Button("Log Distraction") {
-                isShowingLogDistractionView.toggle()
+            Text("a_x : " + sensor.xStr)
+            Text("a_y : " + sensor.yStr)
+            Text("a_z : " + sensor.zStr)
+            Button(action: {
+                self.sensor.isStarted ? self.sensor.stop() : self.sensor.start()
+            }) {
+                self.sensor.isStarted ? Text("STOP") : Text("START")
             }
-            .sheet(isPresented: $isShowingLogDistractionView) {
-                LogDistractionView()
-            }
-            Spacer()
-            Button("Remind Me") {
-                isShowingRemindMeView.toggle()
-            }
-            .sheet(isPresented: $isShowingRemindMeView) {
-                RemindMeView()
-            }
-            Button("Notification") {
-                print("Button pushed")
-                notificationModel.sendNotificationRequest()
+            Button("Send data") {
+                print("Data sent")
                 if WCSession.default.isReachable {
                     WCSession.default.transferUserInfo(["hey":"Hello"])
                     WCSession.default.sendMessage(["hey":"Hello"], replyHandler: nil)
@@ -57,22 +47,54 @@ struct ContentView: View {
                 else {
                     print("Error: not connnected to IOS")
                 }
-                
-                
-//                extensionDelegate.session.transferUserInfo(["hey":"Hello"])
-                //extensionDelegate.session.transferUserInfo(["hey":"Hello"])
+                self.sensor.close()
             }
-        
         }
-        .padding()
     }
-//    private func sendMessage(index: Int) {
-//            let messages: [String: Any] = ["animal": "cat"]
-//            self.extensionDelegate.session.sendMessage(messages, replyHandler: nil) { (error) in
-//                print(error.localizedDescription)
-//            }
-//        }
 }
+        
+//        VStack {
+//            Text("Let's Stay Focused Today!")
+//                .multilineTextAlignment(.center)
+//            Divider().background(Color.orange)
+//            Spacer()
+//            Button("Log Distraction") {
+//                isShowingLogDistractionView.toggle()
+//            }
+//            .sheet(isPresented: $isShowingLogDistractionView) {
+//                LogDistractionView()
+//            }
+//            Spacer()
+//            Button("Remind Me") {
+//                isShowingRemindMeView.toggle()
+//            }
+//            .sheet(isPresented: $isShowingRemindMeView) {
+//                RemindMeView()
+//            }
+//            Button("Notification") {
+//                print("Button pushed")
+//                notificationModel.sendNotificationRequest()
+//                if WCSession.default.isReachable {
+//                    WCSession.default.transferUserInfo(["hey":"Hello"])
+//                    WCSession.default.sendMessage(["hey":"Hello"], replyHandler: nil)
+//                }
+//                else {
+//                    print("Error: not connnected to IOS")
+//                }
+////                extensionDelegate.session.transferUserInfo(["hey":"Hello"])
+//                //extensionDelegate.session.transferUserInfo(["hey":"Hello"])
+//            }
+//
+//        }
+//        .padding()
+//    }
+////    private func sendMessage(index: Int) {
+////            let messages: [String: Any] = ["animal": "cat"]
+////            self.extensionDelegate.session.sendMessage(messages, replyHandler: nil) { (error) in
+////                print(error.localizedDescription)
+////            }
+////        }
+//}
 
 struct LogDistractionView: View {
     struct Ocean: Identifiable {

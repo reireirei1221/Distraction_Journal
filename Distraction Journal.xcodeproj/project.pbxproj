@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		EA2606AA29C49C5800903055 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA77CBB229599035003955F5 /* ContentView.swift */; };
 		EA2606AC29C4A1EB00903055 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2606AB29C4A1EB00903055 /* AppDelegate.swift */; };
+		EA2FBFA929C6BBDC00E175C8 /* MotionSensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2FBFA829C6BBDC00E175C8 /* MotionSensor.swift */; };
 		EA77CB9F29599033003955F5 /* Distraction_JournalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA77CB9E29599033003955F5 /* Distraction_JournalApp.swift */; };
 		EA77CBA129599033003955F5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA77CBA029599033003955F5 /* ContentView.swift */; };
 		EA77CBA329599035003955F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA77CBA229599035003955F5 /* Assets.xcassets */; };
@@ -47,6 +48,7 @@
 
 /* Begin PBXFileReference section */
 		EA2606AB29C4A1EB00903055 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EA2FBFA829C6BBDC00E175C8 /* MotionSensor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionSensor.swift; sourceTree = "<group>"; };
 		EA77CB9B29599033003955F5 /* Distraction Journal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Distraction Journal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA77CB9E29599033003955F5 /* Distraction_JournalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Distraction_JournalApp.swift; sourceTree = "<group>"; };
 		EA77CBA029599033003955F5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				EA77CBC4295D9BB6003955F5 /* ExtensionDelegate.swift */,
 				EA77CBC22959B2FB003955F5 /* NotificationModel.swift */,
 				EA77CBB429599036003955F5 /* Assets.xcassets */,
+				EA2FBFA829C6BBDC00E175C8 /* MotionSensor.swift */,
 				EA77CBB629599036003955F5 /* Preview Content */,
 			);
 			path = "Distraction Journal Watch App";
@@ -254,6 +257,7 @@
 				EA2606AA29C49C5800903055 /* ContentView.swift in Sources */,
 				EA77CBC5295D9BB6003955F5 /* ExtensionDelegate.swift in Sources */,
 				EA77CBB129599035003955F5 /* Distraction_JournalApp.swift in Sources */,
+				EA2FBFA929C6BBDC00E175C8 /* MotionSensor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,6 +327,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				WATCHOS_DEPLOYMENT_TARGET = 9.1;
 			};
 			name = Debug;
 		};
@@ -374,6 +379,7 @@
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				WATCHOS_DEPLOYMENT_TARGET = 9.1;
 			};
 			name = Release;
 		};
