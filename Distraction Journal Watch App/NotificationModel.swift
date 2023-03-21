@@ -30,7 +30,6 @@ class NotificationModel: NSObject, ObservableObject {
         UNUserNotificationCenter.current().delegate = self.notificationDelegate
     }
     
-    
     // 通知の設定
     func sendNotificationRequest(){
         // Configure the notification's payload.

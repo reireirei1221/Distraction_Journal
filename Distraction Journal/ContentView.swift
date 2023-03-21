@@ -11,7 +11,7 @@ import WatchConnectivity
 struct ContentView: View {
     
     @ObservedObject var appDelegate = AppDelegate()
-    @State private var isReachable = "NO"
+    // @State private var isReachable = "NO"
     
     var body: some View {
         

@@ -26,6 +26,7 @@ class MotionSensor: NSObject, ObservableObject {
     
     func open(_ filePath: URL) {
         do {
+            print("File opened")
             FileManager.default.createFile(atPath: filePath.path, contents: nil, attributes: nil)
             let file = try FileHandle(forWritingTo: filePath)
             var header = ""
@@ -98,9 +99,9 @@ class MotionSensor: NSObject, ObservableObject {
     }
     
     func updateMotionData(deviceMotion: CMDeviceMotion) {
-        let xStr = String(deviceMotion.userAcceleration.x)
-        let yStr = String(deviceMotion.userAcceleration.y)
-        let zStr = String(deviceMotion.userAcceleration.z)
+        xStr = String(deviceMotion.userAcceleration.x)
+        yStr = String(deviceMotion.userAcceleration.y)
+        zStr = String(deviceMotion.userAcceleration.z)
         self.write(deviceMotion)
         print("value updated")
     }

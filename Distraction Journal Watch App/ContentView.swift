@@ -43,6 +43,7 @@ struct ContentView: View {
                 if WCSession.default.isReachable {
                     WCSession.default.transferUserInfo(["hey":"Hello"])
                     WCSession.default.sendMessage(["hey":"Hello"], replyHandler: nil)
+                    WCSession.default.transferFile(sensor.filePath!, metadata: nil)
                 }
                 else {
                     print("Error: not connnected to IOS")

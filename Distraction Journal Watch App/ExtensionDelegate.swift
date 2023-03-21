@@ -21,7 +21,7 @@ class ExtensionDelegate: NSObject, ObservableObject, WCSessionDelegate {
 //    }
     
     override init() {
-            self.label = "AAAA"
+            self.label = "Hello"
             super.init()
             
             if WCSession.isSupported() {
@@ -38,9 +38,9 @@ class ExtensionDelegate: NSObject, ObservableObject, WCSessionDelegate {
         } else {
             print("Ready to talk with IOS")
             // self.session.transferUserInfo(["hey":"Hello"])
-            WCSession.default.transferUserInfo(["hey":"Hello"])
-            print("Message sent")
-            print(WCSession.default.isReachable)
+//            WCSession.default.transferUserInfo(["hey":"Hello"])
+//            print("Message sent")
+//            print(WCSession.default.isReachable)
         }
     }
     
